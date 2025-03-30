@@ -5,8 +5,10 @@ def requires_numeric_data(func):
     """
     Decorator to ensure that a DataFrame contains only numeric data.
     
-    Raises:
-        ValueError: If non-numeric data is present.
+    Raises
+    ------
+        ValueError
+            If non-numeric data is present.
     """
     @wraps(func)
     def wrapper(df: pd.DataFrame, *args, **kwargs):
