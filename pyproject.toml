@@ -18,7 +18,7 @@ dependencies = [
   "pandas>=2.0.0",
   "numpy>=1.25.2",
 ]
-description = "Datalizer - A Python package for cleaning and preprocessing datasets."
+description = "Datalizer - A Python package for exploring, cleaning, and preparing numerical datasets."
 license = {file = "LICENSE.txt"}
 maintainers = [{name = "Eörs Szathmáry", email = "szathmary.eors@hallgato.itk.ppke.hu"}]
 name = "datalizer"
