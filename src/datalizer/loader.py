@@ -1,6 +1,8 @@
 import os
 import pandas as pd
 
+__all__ = ["load_data"]
+
 def load_data(file_path: str) -> pd.DataFrame:
     """
     Load a dataset from a file into a pandas DataFrame.

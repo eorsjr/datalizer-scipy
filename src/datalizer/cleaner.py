@@ -2,6 +2,8 @@ import pandas as pd
 from typing import Literal
 from datalizer.utils import *
 
+__all__ = ["check_for_issues", "clean_basic"]
+
 @requires_numeric_data
 def check_for_issues(df: pd.DataFrame) -> None:
     """
