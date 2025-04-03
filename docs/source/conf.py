@@ -8,6 +8,8 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath("../../src"))  # Add the src path
+sys.path.insert(0, os.path.abspath('../..'))
+sys.path.insert(0, os.path.abspath('../../examples'))
 
 project = 'Datalizer'
 copyright = '2025, Eors Szathmary, Peter Osztobanyi,  Reka Kovacs'
@@ -18,10 +20,13 @@ release = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx.ext.autodoc',  # For auto-generating docs from docstrings
-              'sphinx.ext.napoleon'  # For supporting Google/NumPy style docstrings
+              'sphinx.ext.napoleon',  # For supporting Google/NumPy style docstrings
+              'nbsphinx',  # For including Jupyter notebooks
 ]
 
-
+nbsphinx_require_paths = {
+    'pandoc': False,
+}
 templates_path = ['_templates']
 exclude_patterns = []
 

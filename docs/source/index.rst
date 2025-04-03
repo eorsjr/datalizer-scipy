@@ -22,5 +22,5 @@ Let us help you skip the heavy work of preprocessing and get straight to the gol
    :maxdepth: 2
    :caption: Tutorials:
 
-   examples
+   examples/example
    
