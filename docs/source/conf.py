@@ -10,8 +10,8 @@ import sys
 sys.path.insert(0, os.path.abspath("../../src"))  # Add the src path
 
 project = 'Datalizer'
-copyright = '2025, Kovacs Reka, Osztobanyi Peter, Szathmary Eors'
-author = 'Kovacs Reka, Osztobanyi Peter, Szathmary Eors'
+copyright = '2025, Eors Szathmary, Peter Osztobanyi,  Reka Kovacs'
+author = 'Eors Szathmary, Peter Osztobanyi,  Reka Kovacs'
 release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
