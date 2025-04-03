@@ -1,8 +1,10 @@
 [build-system]
 build-backend = "setuptools.build_meta"
 requires = ["setuptools>=61.0"]
+[build-system]
 
 [project]
+
 authors = [
   {name = "Eörs Szathmáry"},
   {name = "Péter Osztobányi"},
@@ -14,15 +16,20 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Topic :: Scientific/Engineering",
 ]
+
+
 dependencies = [
   "pandas>=2.0.0",
   "numpy>=1.25.2",
+  "sphinx-rtd-theme>=1.0.0"
 ]
 description = "Datalizer - A Python package for exploring, cleaning, and preparing numerical datasets."
 license = {file = "LICENSE.txt"}
 maintainers = [{name = "Eörs Szathmáry", email = "szathmary.eors@hallgato.itk.ppke.hu"}]
 name = "datalizer"
-readme = {file = "README.md", content-type = "text/markdown"}
+
+readme = ["README.rst", "README.md"]
+
 requires-python = ">=3.10"
 version = "0.1.0"
 
