@@ -1,33 +1,20 @@
-Usage Guide
-================================================================================================
+Usage
+================================================================================
 
-This guide explains how to start to use the `datalizer` package, covering data loading, preprocessing, and validation.
+Installation
+--------------------------------------------------------------------------------
 
+Clone the git repository or download the code.
 
-Prerequisites
-------------------------------------------------------------------------------------------------
-
-Before installing Datalizer, ensure you have:
-
-* Python 3.8 or newer
-* pip (Python package manager)
-
-
-Basic Installation
-------------------------------------------------------------------------------------------------
-
-You can install Datalizer using pip:
+Navigate to the project directory and install with pip:
 
 .. code-block:: bash
 
-    pip install datalizer-scipy
+    pip install .
 
+To validate the installation, check the version:
 
-Then you can use the package in your projects with the following import:
-
-.. code-block:: bash
+.. code-block:: python
 
     import datalizer
-
-
-Further guidance for the functions built in the package can be found at Tutorials section.
+    print(datalizer.__version__)

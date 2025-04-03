@@ -3,12 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Datalizer documentation
-=======================
+Welcome to Datalizer's documentation!
+=====================================
 
-Fearless miner, welcome to the shortcut for mining and machine learning! 
-Let us help you skip the heavy work of preprocessing and get straight to the gold.
-
+.. include:: ../../README.rst
 
 .. toctree::
    :maxdepth: 2
@@ -23,4 +21,3 @@ Let us help you skip the heavy work of preprocessing and get straight to the gol
    :caption: Tutorials:
 
    examples/example
-   
