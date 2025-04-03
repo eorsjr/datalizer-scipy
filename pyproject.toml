@@ -27,7 +27,7 @@ license = {file = "LICENSE.txt"}
 maintainers = [{name = "Eörs Szathmáry", email = "szathmary.eors@hallgato.itk.ppke.hu"}]
 name = "datalizer"
 
-readme = ["README.rst"]
+readme = "README.rst"
 
 requires-python = ">=3.10"
 version = "0.1.0"
