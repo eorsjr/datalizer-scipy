@@ -34,4 +34,12 @@ exclude_patterns = []
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = 'sphinx_rtd_theme'
-html_static_path = ['_static']
+# html_static_path = ['_static']
+
+html_context = {
+"display_github": True,
+"github_user": "eorsjr",
+"github_repo": "datalizer-scipy",
+'github_version': 'main',
+'conf_py_path': '/docs/source/',
+}
