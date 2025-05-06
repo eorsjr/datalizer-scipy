@@ -16,10 +16,10 @@ classifiers = [
   "Topic :: Scientific/Engineering",
 ]
 
-
 dependencies = [
   "pandas>=2.0.0",
-  "numpy>=1.25.2"
+  "numpy>=1.25.2",
+  "scikit-learn>=1.0.0",
 ]
 description = "Datalizer - A Python package for exploring, cleaning, and preparing numerical datasets."
 license = {file = "LICENSE.txt"}
