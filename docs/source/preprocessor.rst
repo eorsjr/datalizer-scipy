@@ -1,7 +1,7 @@
 Preprocessor
 ================================================================================
 
-This module contains the preprocessor classes for the Datalizer library, like merging, removing outliers, etc.
+This module provides tools for preprocessing datasets, including merging, splitting data, and removing correlated features.
 
 .. automodule:: datalizer.preprocessor
     :members:
