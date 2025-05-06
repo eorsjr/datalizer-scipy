@@ -15,6 +15,7 @@ Welcome to Datalizer's documentation!
    usage
    loader
    cleaner
+   preprocessor
 
 .. toctree::
    :maxdepth: 2
