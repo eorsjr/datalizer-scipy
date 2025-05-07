@@ -53,7 +53,7 @@ def preprocess_data(X_train: pd.DataFrame, y_train: pd.DataFrame, merge_col: str
 
 
 
-def recommend_approach(X_train: pd.DataFrame, y_train: pd.DataFrame) -> dict:
+def recommend_approach(X_train_split: pd.DataFrame, y_train_split: pd.DataFrame) -> dict:
     """
     Recommends a modeling approach based on the characteristics of the dataset.
     It suggests appropriate models, checks for data imbalance, and recommends 
@@ -61,9 +61,9 @@ def recommend_approach(X_train: pd.DataFrame, y_train: pd.DataFrame) -> dict:
     
     Parameters:
     ----------
-    X_train : pd.DataFrame
+    X_train_split : pd.DataFrame
         The feature dataset (excluding target column).
-    y_train : pd.DataFrame
+    y_train_split : pd.DataFrame
         The target DataFrame containing the target column.
     
     Returns:
@@ -75,16 +75,16 @@ def recommend_approach(X_train: pd.DataFrame, y_train: pd.DataFrame) -> dict:
     recommendations = {}
     
     # Basic dataset characteristics
-    n_samples, n_features = X_train.shape
+    n_samples, n_features = X_train_split.shape
     recommendations['dataset_info'] = {
         'samples': n_samples,
         'features': n_features,
-        'feature_types': dict(X_train.dtypes.value_counts().items())
+        'feature_types': dict(X_train_split.dtypes.value_counts().items())
     }
 
     # Determine if it's a classification or regression task based on the target variable
-    unique_values = y_train.nunique()
-    if y_train.dtype == 'bool' or (pd.api.types.is_numeric_dtype(y_train) and unique_values <= 10):
+    unique_values = y_train_split.nunique()
+    if y_train_split.dtype == 'bool' or (pd.api.types.is_numeric_dtype(y_train_split) and unique_values <= 10):
         task_type = "classification"
         
         # Determine if binary or multiclass
@@ -98,7 +98,7 @@ def recommend_approach(X_train: pd.DataFrame, y_train: pd.DataFrame) -> dict:
     
     # Check if the data is imbalanced (for classification tasks)
     if task_type == "classification":
-        class_counts = y_train.value_counts(normalize=True)
+        class_counts = y_train_split.value_counts(normalize=True)
         imbalance_ratio = class_counts.min() / class_counts.max()
         
         if imbalance_ratio < 0.1:
