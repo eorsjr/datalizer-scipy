@@ -29,7 +29,7 @@ name = "datalizer"
 readme = "README.rst"
 
 requires-python = ">=3.10"
-version = "0.1.0"
+version = "0.1.1"
 
 [project.urls]
 Homepage = "https://github.com/eorsjr/datalizer-scipy"
