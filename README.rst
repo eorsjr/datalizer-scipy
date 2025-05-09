@@ -12,3 +12,4 @@ Its goal is to help users:
 Datalizer is ideal for students, researchers, and practitioners who want to focus on insight and modeling — not cleanup.
 
 Full documentation: https://datalizer.readthedocs.io
+`Colab Notebook <https://colab.research.google.com/github/eorsjr/datalizer-scipy/blob/main/docs/source/examples/example.ipynb#>`_
