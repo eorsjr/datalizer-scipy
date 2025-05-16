@@ -61,15 +61,15 @@ def recommend_approach(X_train_split: pd.DataFrame, y_train_split: pd.DataFrame)
     
     Parameters:
     ----------
-    X_train_split : pd.DataFrame
-        The feature dataset (excluding target column).
-    y_train_split : pd.DataFrame
-        The target DataFrame containing the target column.
+        X_train_split : pd.DataFrame
+            The feature dataset (excluding target column).
+        y_train_split : pd.DataFrame
+            The target DataFrame containing the target column.
     
     Returns:
     -------
-    dict
-        A dictionary containing recommended models and strategies to prevent overfitting.
+        dict
+            A dictionary containing recommended models and strategies to prevent overfitting.
     """
     
     recommendations = {}
