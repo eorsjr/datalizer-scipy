@@ -13,6 +13,7 @@ Navigate to the project directory and install with pip:
     pip install .
 
 Or install from PyPI:
+
 .. code-block:: bash
 
     pip install datalizer
